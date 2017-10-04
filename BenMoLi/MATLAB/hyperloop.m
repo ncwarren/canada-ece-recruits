@@ -1,5 +1,4 @@
 %{
-Ben Hamilton
 Mohamed Mahmoud
 Liam Waghorn
 
