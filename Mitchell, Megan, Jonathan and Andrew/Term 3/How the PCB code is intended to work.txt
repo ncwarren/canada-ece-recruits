@@ -1,0 +1,7 @@
+Eng 1 Attemping Term 3 PCB
+
+Note: i (mitchell) havent coded before in my life so whatever is provided may not work properly and is what came of hours of tutorials. after consulting reddit for some feedback there wasnt anyone saying this wouldnt work but more or so theres a better way of doing it (better managing Pull-up/Pull-down switches) therefore im proud of how it turned out
+
+for the microcontroller i used a Arduino Nano v3 which was relatively easier to wrap my head around
+
+i have its setup so switch 2 on pin 10 should interact with LED(D2) on pin 2 and should turn it on. this general pattern follows as pin 5 interacts with pin 10 and pin 7 interacts with pin 16
