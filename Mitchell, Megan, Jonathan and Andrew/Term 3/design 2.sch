@@ -1,0 +1,445 @@
+EESchema Schematic File Version 2
+LIBS:design 2-rescue
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nordicsemi
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:modules
+LIBS:motor_drivers
+LIBS:msp430
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:transf
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:design 2-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SW_Push SW2
+U 1 1 59D07E82
+P 4450 4150
+F 0 "SW2" H 4500 4250 50  0000 L CNN
+F 1 "SW_Push" H 4450 4090 50  0000 C CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    4450 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW3
+U 1 1 59D07ED9
+P 4450 4450
+F 0 "SW3" H 4500 4550 50  0000 L CNN
+F 1 "SW_Push" H 4450 4390 50  0000 C CNN
+F 2 "" H 4450 4650 50  0001 C CNN
+F 3 "" H 4450 4650 50  0001 C CNN
+	1    4450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SW_Push SW4
+U 1 1 59D07F0A
+P 4450 4750
+F 0 "SW4" H 4500 4850 50  0000 L CNN
+F 1 "SW_Push" H 4450 4690 50  0000 C CNN
+F 2 "" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0001 C CNN
+	1    4450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino_Nano_v3.x-RESCUE-design_2 A2
+U 1 1 59D084D0
+P 5950 4050
+F 0 "A2" H 5750 5075 50  0000 R CNN
+F 1 "Arduino_Nano_v3.x" H 5750 5000 50  0000 R CNN
+F 2 "Modules:Arduino_Nano" H 6100 3100 50  0001 L CNN
+F 3 "" H 5950 3050 50  0001 C CNN
+	1    5950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 59D0995E
+P 4700 3250
+F 0 "D2" H 4700 3350 50  0000 C CNN
+F 1 "LED" H 4700 3150 50  0000 C CNN
+F 2 "" H 4700 3250 50  0001 C CNN
+F 3 "" H 4700 3250 50  0001 C CNN
+	1    4700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D3
+U 1 1 59D09A06
+P 4700 3550
+F 0 "D3" H 4700 3650 50  0000 C CNN
+F 1 "LED" H 4700 3450 50  0000 C CNN
+F 2 "" H 4700 3550 50  0001 C CNN
+F 3 "" H 4700 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 59D09A42
+P 4700 3850
+F 0 "D4" H 4700 3950 50  0000 C CNN
+F 1 "LED" H 4700 3750 50  0000 C CNN
+F 2 "" H 4700 3850 50  0001 C CNN
+F 3 "" H 4700 3850 50  0001 C CNN
+	1    4700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 59D09AA7
+P 5200 3450
+F 0 "R4" V 5280 3450 50  0000 C CNN
+F 1 "R" V 5200 3450 50  0000 C CNN
+F 2 "" V 5130 3450 50  0001 C CNN
+F 3 "" H 5200 3450 50  0001 C CNN
+	1    5200 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 59D09B22
+P 5200 3650
+F 0 "R5" V 5280 3650 50  0000 C CNN
+F 1 "R" V 5200 3650 50  0000 C CNN
+F 2 "" V 5130 3650 50  0001 C CNN
+F 3 "" H 5200 3650 50  0001 C CNN
+	1    5200 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59D09B77
+P 5200 3850
+F 0 "R6" V 5280 3850 50  0000 C CNN
+F 1 "R" V 5200 3850 50  0000 C CNN
+F 2 "" V 5130 3850 50  0001 C CNN
+F 3 "" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2900 4100 5150
+Wire Wire Line
+	4100 4150 4250 4150
+Wire Wire Line
+	4100 4450 4250 4450
+Connection ~ 4100 4150
+Wire Wire Line
+	4100 4750 4250 4750
+Connection ~ 4100 4450
+Wire Wire Line
+	4650 4150 5450 4150
+Connection ~ 4100 4750
+Wire Wire Line
+	4650 4450 5450 4450
+Wire Wire Line
+	4650 4750 5450 4750
+Wire Wire Line
+	4850 3450 5050 3450
+Wire Wire Line
+	5350 3450 5450 3450
+Wire Wire Line
+	5350 3650 5450 3650
+Wire Wire Line
+	5350 3850 5450 3850
+Wire Wire Line
+	5050 3850 4850 3850
+Wire Wire Line
+	5050 3650 4850 3650
+Wire Wire Line
+	4850 3650 4850 3550
+Wire Wire Line
+	4850 3450 4850 3250
+Wire Wire Line
+	4550 3250 4550 3850
+Wire Wire Line
+	4550 3550 3900 3550
+Connection ~ 4550 3550
+Wire Wire Line
+	5500 5150 5500 4950
+Wire Wire Line
+	5500 4950 3900 4950
+Connection ~ 5500 5150
+Wire Wire Line
+	3900 4950 3900 3550
+NoConn ~ 5450 3550
+NoConn ~ 5450 3750
+NoConn ~ 5450 3950
+NoConn ~ 5450 4050
+NoConn ~ 5450 4250
+NoConn ~ 5450 4350
+NoConn ~ 5450 4550
+NoConn ~ 5450 4650
+NoConn ~ 6450 4750
+NoConn ~ 6450 4650
+NoConn ~ 6450 4550
+NoConn ~ 6450 4450
+NoConn ~ 6450 4350
+NoConn ~ 6450 4250
+NoConn ~ 6450 4150
+NoConn ~ 6450 4050
+NoConn ~ 6450 3850
+NoConn ~ 6450 3550
+NoConn ~ 6450 3450
+NoConn ~ 6050 3050
+Wire Wire Line
+	4100 2900 6150 2900
+Wire Wire Line
+	6150 2900 6150 3050
+Wire Wire Line
+	5850 2850 5850 3050
+Wire Wire Line
+	3500 2850 5850 2850
+Wire Wire Line
+	5950 5150 5950 5050
+Wire Wire Line
+	6050 5050 6050 5250
+Connection ~ 5950 5150
+Connection ~ 4100 5150
+$Comp
+L Transformer_1P_1S T1
+U 1 1 59D0CCC6
+P 2150 3950
+F 0 "T1" H 2150 4200 50  0000 C CNN
+F 1 "Transformer_1P_1S" H 2150 3650 50  0000 C CNN
+F 2 "" H 2150 3950 50  0001 C CNN
+F 3 "" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L D_Bridge_-AA+ D1
+U 1 1 59D0CD19
+P 2950 3950
+F 0 "D1" H 3000 4225 50  0000 L CNN
+F 1 "D_Bridge_-AA+" H 3000 4150 50  0000 L CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "" H 2950 3950 50  0001 C CNN
+	1    2950 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59D0CD54
+P 3250 4100
+F 0 "R1" V 3330 4100 50  0000 C CNN
+F 1 "R" V 3250 4100 50  0000 C CNN
+F 2 "" V 3180 4100 50  0001 C CNN
+F 3 "" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 59D0CD83
+P 3500 4100
+F 0 "C1" H 3525 4200 50  0000 L CNN
+F 1 "C" H 3525 4000 50  0000 L CNN
+F 2 "" H 3538 3950 50  0001 C CNN
+F 3 "" H 3500 4100 50  0001 C CNN
+	1    3500 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 59D0CDBA
+P 1750 3750
+F 0 "#FLG01" H 1750 3825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 3900 50  0000 C CNN
+F 2 "" H 1750 3750 50  0001 C CNN
+F 3 "" H 1750 3750 50  0001 C CNN
+	1    1750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +24V #PWR02
+U 1 1 59D0CDFA
+P 1750 3750
+F 0 "#PWR02" H 1750 3600 50  0001 C CNN
+F 1 "+24V" H 1750 3890 50  0000 C CNN
+F 2 "" H 1750 3750 50  0001 C CNN
+F 3 "" H 1750 3750 50  0001 C CNN
+	1    1750 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L AC #PWR03
+U 1 1 59D0CE2A
+P 1750 4100
+F 0 "#PWR03" H 1750 4000 50  0001 C CNN
+F 1 "AC" H 1750 4350 50  0000 C CNN
+F 2 "" H 1750 4100 50  0001 C CNN
+F 3 "" H 1750 4100 50  0001 C CNN
+	1    1750 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1750 3750 1750 4150
+Connection ~ 1750 4100
+Wire Wire Line
+	2550 4150 2550 4250
+Wire Wire Line
+	2550 4250 2950 4250
+Wire Wire Line
+	2550 3750 2550 3650
+Wire Wire Line
+	2550 3650 2950 3650
+Wire Wire Line
+	2650 3950 2650 4300
+Wire Wire Line
+	2650 4300 3500 4300
+Wire Wire Line
+	3250 4300 3250 4250
+Wire Wire Line
+	3500 4250 3500 5250
+Connection ~ 3250 4300
+Wire Wire Line
+	3500 3950 3250 3950
+Connection ~ 3500 4300
+Connection ~ 3500 3950
+Wire Wire Line
+	3500 2850 3500 3950
+Wire Wire Line
+	4500 5150 5950 5150
+Wire Wire Line
+	3500 5250 6050 5250
+$Comp
+L R R2
+U 1 1 59D11698
+P 4350 5150
+F 0 "R2" V 4430 5150 50  0000 C CNN
+F 1 "R" V 4350 5150 50  0000 C CNN
+F 2 "" V 4280 5150 50  0001 C CNN
+F 3 "" H 4350 5150 50  0001 C CNN
+	1    4350 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5150 4200 5150
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 59D12572
+P 3500 2850
+F 0 "#FLG04" H 3500 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 3500 3000 50  0000 C CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 7450 7500 0    60   ~ 0
+Attempt at term 3 PCB design project
+Text Notes 8250 7650 0    60   ~ 0
+october 1st 2017
+Text Notes 10600 7650 0    60   ~ 0
+2.1
+Text Notes 500  1600 0    394  ~ 0
+Mitchell Vickers\nmpvickers@mun.ca
+Text Notes 1700 3500 0    39   ~ 0
+24V ac/dc power converter
+Text Notes 600  1850 0    39   ~ 0
+Side Note: ive never learned to design a PCB before in my life\nso this is what came of a full day and a half of research
+$EndSCHEMATC
