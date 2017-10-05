@@ -2,7 +2,7 @@
 
 Group Members
 
-Mitchell Stride
-Colin Hunt
-Mohammed Birama
+Mitchell Stride,
+Colin Hunt,
+Mohammed Birama,
 Sakif Mohammed
