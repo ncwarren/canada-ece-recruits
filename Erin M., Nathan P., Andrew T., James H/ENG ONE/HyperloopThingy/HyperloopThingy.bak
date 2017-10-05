@@ -1,0 +1,222 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:HyperloopThingy-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 59D58641
+P 6650 5200
+F 0 "D1" H 6650 5300 50  0000 C CNN
+F 1 "LED" H 6650 5100 50  0000 C CNN
+F 2 "LEDs:LED_1W_3W_R8" H 6650 5200 50  0001 C CNN
+F 3 "" H 6650 5200 50  0001 C CNN
+	1    6650 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ATMEGA8-16PU U1
+U 1 1 59D5885A
+P 5200 4150
+F 0 "U1" H 4450 5450 50  0000 L BNN
+F 1 "ATMEGA8-16PU" H 5700 2700 50  0000 L BNN
+F 2 "Battery_Holders:Bulgin_BX0036_1xC" H 5200 4150 50  0001 C CIN
+F 3 "" H 5200 4150 50  0001 C CNN
+	1    5200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 59D589DD
+P 5200 2400
+F 0 "#PWR01" H 5200 2250 50  0001 C CNN
+F 1 "+5V" H 5200 2540 50  0000 C CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 59D589F5
+P 5550 2400
+F 0 "#FLG02" H 5550 2475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 2550 50  0000 C CNN
+F 2 "" H 5550 2400 50  0001 C CNN
+F 3 "" H 5550 2400 50  0001 C CNN
+	1    5550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 59D58A0D
+P 4150 2650
+F 0 "R1" V 4230 2650 50  0000 C CNN
+F 1 "1K" V 4150 2650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 4080 2650 50  0001 C CNN
+F 3 "" H 4150 2650 50  0001 C CNN
+	1    4150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 59D58ABB
+P 5000 5900
+F 0 "#PWR03" H 5000 5650 50  0001 C CNN
+F 1 "GND" H 5000 5750 50  0000 C CNN
+F 2 "" H 5000 5900 50  0001 C CNN
+F 3 "" H 5000 5900 50  0001 C CNN
+	1    5000 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG04
+U 1 1 59D58AD8
+P 5450 5900
+F 0 "#FLG04" H 5450 5975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 6050 50  0000 C CNN
+F 2 "" H 5450 5900 50  0001 C CNN
+F 3 "" H 5450 5900 50  0001 C CNN
+	1    5450 5900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 2400 5200 2750
+Wire Wire Line
+	5550 2600 5550 2400
+Wire Wire Line
+	4450 2600 7000 2600
+Connection ~ 5200 2600
+Wire Wire Line
+	4450 2600 4450 2500
+Wire Wire Line
+	4450 2500 4150 2500
+Wire Wire Line
+	4150 2800 4150 3050
+Wire Wire Line
+	4150 3050 4300 3050
+Wire Wire Line
+	5200 5650 5200 5900
+Wire Wire Line
+	5000 5900 5450 5900
+Connection ~ 5200 5900
+Wire Wire Line
+	6200 5050 6650 5050
+Wire Wire Line
+	6650 5350 6650 5750
+Connection ~ 5200 5750
+Wire Wire Line
+	7000 4250 7000 5750
+Connection ~ 6650 5750
+$Comp
+L SW_Push SW1
+U 1 1 59D58E72
+P 7000 4050
+F 0 "SW1" H 7050 4150 50  0000 L CNN
+F 1 "SW_Push" H 7000 3990 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 7000 4250 50  0001 C CNN
+F 3 "" H 7000 4250 50  0001 C CNN
+	1    7000 4050
+	0    1    1    0   
+$EndComp
+Connection ~ 7000 4450
+Wire Wire Line
+	7000 2600 7000 3850
+Connection ~ 5550 2600
+$Comp
+L R R3
+U 1 1 59D59152
+P 6550 4450
+F 0 "R3" V 6630 4450 50  0000 C CNN
+F 1 "1K" V 6550 4450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 6480 4450 50  0001 C CNN
+F 3 "" H 6550 4450 50  0001 C CNN
+	1    6550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 59D591D0
+P 5850 5750
+F 0 "R2" V 5930 5750 50  0000 C CNN
+F 1 "10K" V 5850 5750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5780 5750 50  0001 C CNN
+F 3 "" H 5850 5750 50  0001 C CNN
+	1    5850 5750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 5750 6000 5750
+Wire Wire Line
+	5700 5750 5200 5750
+Wire Wire Line
+	7000 4450 6700 4450
+Wire Wire Line
+	6400 4450 6200 4450
+NoConn ~ 6200 3050
+NoConn ~ 6200 3150
+NoConn ~ 6200 3250
+NoConn ~ 6200 3350
+NoConn ~ 6200 3450
+NoConn ~ 6200 3550
+NoConn ~ 6200 3750
+NoConn ~ 6200 3850
+NoConn ~ 6200 3950
+NoConn ~ 6200 4050
+NoConn ~ 6200 4250
+NoConn ~ 6200 4550
+NoConn ~ 6200 4650
+NoConn ~ 6200 4750
+NoConn ~ 6200 4850
+NoConn ~ 6200 4950
+NoConn ~ 6200 5150
+NoConn ~ 4300 3250
+NoConn ~ 4300 3350
+NoConn ~ 4300 3450
+NoConn ~ 4300 3750
+NoConn ~ 4300 3950
+NoConn ~ 6200 4150
+$EndSCHEMATC

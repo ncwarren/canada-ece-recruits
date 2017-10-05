@@ -1,0 +1,13 @@
+Team HYPEerloop:
+
+-James Horner
+-Nathan Power
+-Erin Maher
+-Andrew Troake
+
+No member of our group is taking Engi1040 yet,
+ so we had zero starting knowledge with circuits,
+let alone knowledge of how to use KiCad.
+It may have taken the whole week and a lot of googling and videos,
+but together we think we have figured out how the program functions 
+and almost understand how to make a proper circuit. 
